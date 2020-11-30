@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABM</title>
+</head>
+<body>
+    <h1>Cargar Producto</h1>
+    Nombre: <input id="nombre" type="text" placeholder="Nombre"><br>
+    Precio: <input id="precio" type="text" placeholder="Precio"><br>
+    <button id="btn-guardar" type="button" onclick="guardar()">Guardar</button>
+    <button id="btn-actualizar" type="button" onclick="actualizar()" style="display:none">Actualizar</button>
+    <button type="button" onclick="nuevo()">Limpiar</button>
+    <hr>
+    
+    
+    Valor del dolar: <input id="dolar" type="text" placeholder="Nombre" >
+    
+    <button id="cambiar" type="button" onclick="cambiar()">Cambiar</button>
+    <table id="tabla-producto" border="1" >
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Precio Dolar</th>
+                <th>Eliminar</th>
+                <th>Editar</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+</html>
